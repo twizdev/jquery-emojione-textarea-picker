@@ -10,8 +10,6 @@ You can choose to send the shortcode ( eg: :smiley: ) or the unicode ( ☺ ) to 
 
 ## Usage
 
-###### Basic form
-
 Include the plugin and css in the page header:
 ```
 <link rel="stylesheet" href="file/to/path/css/emojione.picker.css">
@@ -22,13 +20,13 @@ Simple Usage
 ```
 <textarea id="txt1"></textarea>
 <script type="text/javascript">
-	$( "#txt1").emojionePicker();
+	$( "#txt1" ).emojionePicker();
 </script>
 ```
 
 ###### Defaults
 ```
-$( "#txt1").emojionePicker({
+$( "#txt1" ).emojionePicker({
 	pickerTop : 5,
 	pickerRight : 5,
 	type : "shortcode",
