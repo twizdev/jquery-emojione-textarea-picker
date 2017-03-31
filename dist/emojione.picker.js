@@ -207,7 +207,7 @@
 						var containerH = $( "."  + emojiContainer ).height();
 						var pickerOffset = $( this ).offset();
 							
-						var top = "";
+						var top, left;
 						if( pickerOffset["top"] > ( containerH  - 15 )  )
 						{
 							top = pickerOffset["top"] - containerH - 15;
@@ -215,9 +215,16 @@
 							top = pickerOffset["top"] + $( this ).height() + 15;
 						}
 						
+						if( pickerOffset["left"] > $( "."  + emojiContainer ).width() )
+						{
+							left = pickerOffset["left"] - $( "."  + emojiContainer ).width() + $( this ).width();
+						}else{
+							left = pickerOffset["left"];
+						}
+						
 						$( "."  + emojiContainer ).css({
 							"top"	: top + "px",
-							"left"	: pickerOffset["left"] - $( "."  + emojiContainer ).width() + $( this ).width() + "px",
+							"left"	: left + "px",
 						}).fadeIn();					
 					}
 				);
