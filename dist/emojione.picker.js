@@ -4,7 +4,7 @@
  * This a lightweight ( 29.2 KB ) plugin that adds an emojiOne emoji picker to a textarea.
  * You can choose to send the shortcode ( eg: :smiley: ) or the unicode ( ☺ ) to the textarea.
  * 
- * https://github.com/jquery-emojione-textarea-picker
+ * https://github.com/twizdev/jquery-emojione-textarea-picker
  *
  * Copyright 2017, TwizDev
  *
@@ -19,9 +19,9 @@
 		 
 		// DEFAULT SETTINGS
         var settings = $.extend({
-			pickerTop       : 5, 		   // Picker top margin
-			pickerRight     : 5, 		   // Picker right margin
-			type			: "shortcode", // What to send to textarea, valid values are "shortcode" and "unicode"
+			pickerTop       : 5, 		// Picker top margin
+			pickerRight     : 5, 		// Picker right margin
+			type		: "shortcode",  // What to send to textarea, valid values are "shortcode" and "unicode"
 			
         }, options );
  
